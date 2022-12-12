@@ -704,17 +704,7 @@ footer {
   align-items: center;
   
 }
-
-#footer__links ul {
-  /* margin-left: 0;
-  padding-left: 0;
-  padding-right: 0; */
-}
-
-#footer__links ul li {
-  /* margin-left: 0; */
-}
-
 #footer__links ul li a {
   color: #1b1f2b;
+  cursor: pointer;
 }
