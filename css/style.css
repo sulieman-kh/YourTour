@@ -606,6 +606,7 @@ button[type="reset"] {
 
 .footer__cards__travel__stories {
   display: flex;
+  align-items: end;
 }
 
 .left__footer__card__stories {
