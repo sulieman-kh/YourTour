@@ -1,0 +1,58 @@
+/*
+
+*** 01 TYPOGRAPHY SYSTEM
+*   FONT SIZES (PX) 
+16 / 17 / 20 / 23 / 34 / 35 / 59 / 96
+
+*   FONT WEIGHTS
+DEFAULT: 400
+MEDIUM: 500
+BOLD: 700
+
+*** 02 COLORS
+
+** BACKGROUND
+* #e5e5e5
+
+** TINTS
+* #FFFFFF
+* #F4F0E9
+* #A6A6A6
+
+** SHADES
+* #286562
+* #efa501
+* #f8e6be
+* #f1f3f2
+* #d9dfdb
+
+** ACCENTS:
+* hsl(225, 23%, 14%) 
+
+** SHADOWS (REM) 1rem = 16px
+
+* 0 1.2rem 3.2rem rgba(0, 0, 0, 0.3)
+
+*** 03 BORDER-RADIUS (PX)
+DESKTOP: 50
+MOBILE: 20
+*/
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Nanum Myeongjo", serif;
+  font-family: "Roboto", sans-serif;
+  background-color: #e5e5e5;
+  overflow-x: hidden;
+}
