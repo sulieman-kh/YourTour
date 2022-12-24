@@ -207,6 +207,17 @@
   .container__third__row__images img {
     height: 30rem;
   }
+  /* Contect us */
+  #contect-us .img-contect-us {
+    width: 28rem;
+  }
+  /* Footer */
+  footer .container {
+    flex-direction: column;
+  }
+  #footer__links {
+    padding-right: 0;
+  }
 }
 
 /* TABLET */
@@ -293,6 +304,7 @@
     gap: 2.8rem;
     margin-bottom: 7.5rem;
   }
+
   .box_img__card__contect__us {
     text-align: center;
   }
