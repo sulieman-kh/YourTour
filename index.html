@@ -3,8 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="description" content="YourTour - сайт для бронирования туров">
-    <meta name="keywords" content="путешествия, экскурсия, Туристам, Подбор тура, Страны, тур, отдыхать, плавание, море, лето">
+    <meta name="description" content="YourTour - сайт для бронирования туров" />
+    <meta
+      name="keywords"
+      content="путешествия, экскурсия, Туристам, Подбор тура, Страны, тур, отдыхать, плавание, море, лето"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -24,7 +27,7 @@
     <header class="header">
       <nav class="nav">
         <a href="#" class="logo">YourTour</a>
-        <nav class="mobile-nav">
+        <nav class="menu-nav">
           <ul>
             <li class="list-header">
               <a class="" href="#choose-your-tour">Туры</a>
@@ -38,8 +41,8 @@
       </nav>
       <div class="hero">
         <div class="cta__hero">
-          <div class="title">
-            <h1>Идеальные путешествия существуют</h1>
+          <div>
+            <h1 class="title">Идеальные путешествия существуют</h1>
           </div>
           <div>
             <p class="desc">
@@ -74,12 +77,12 @@
             src="/img/select-your-tour-1.png"
           />
           <div class="box__text">
-            <div>
-              <div><h3>Путешествие в горы</h3></div>
+            <div class="top__box">
+              <div class="card__title"><h3>Путешествие в горы</h3></div>
               <div class="card__text">от 80 000 руб</div>
             </div>
 
-            <div class="footer__card">
+            <div class="footer__box">
               <div class="card__button">
                 Подробнее
                 <div class="icon">
@@ -97,12 +100,12 @@
             src="/img/select-your-tour-2.png"
           />
           <div class="box__text">
-            <div>
-              <div><h3>Путешествие в горы</h3></div>
+            <div class="top__box">
+              <div class="card__title"><h3>Путешествие в горы</h3></div>
               <div class="card__text">от 80 000 руб</div>
             </div>
 
-            <div class="footer__card">
+            <div class="footer__box">
               <div class="card__button">
                 Подробнее
                 <div class="icon">
@@ -121,12 +124,12 @@
             src="/img/select-your-tour-3.png"
           />
           <div class="box__text">
-            <div>
+            <div class="top__box">
               <div class="card__title"><h3>Путешествие в горы</h3></div>
               <div class="card__text">от 80 000 руб</div>
             </div>
 
-            <div class="footer__card">
+            <div class="footer__box">
               <div class="card__button">
                 Подробнее
                 <div class="icon">
@@ -145,12 +148,12 @@
             src="/img/select-your-tour-4.png"
           />
           <div class="box__text">
-            <div>
+            <div class="top__box">
               <div class="card__title"><h3>Путешествие в горы</h3></div>
               <div class="card__text">от 80 000 руб</div>
             </div>
 
-            <div class="footer__card">
+            <div class="footer__box">
               <div class="card__button">
                 Подробнее
                 <div class="icon">
@@ -168,11 +171,11 @@
             src="/img/select-your-tour-5.png"
           />
           <div class="box__text">
-            <div>
-              <div><h3>Путешествие в горы</h3></div>
+            <div class="top__box">
+              <div class="card__title"><h3>Путешествие в горы</h3></div>
               <div class="card__text">от 80 000 руб</div>
             </div>
-            <div class="footer__card">
+            <div class="footer__box">
               <div class="card__button">
                 Подробнее
                 <div class="icon">
@@ -190,12 +193,12 @@
             src="/img/select-your-tour-6.png"
           />
           <div class="box__text">
-            <div>
+            <div class="top__box">
               <div class="card__title"><h3>Путешествие в горы</h3></div>
               <div class="card__text">от 80 000 руб</div>
             </div>
 
-            <div class="footer__card">
+            <div class="footer__box">
               <div class="card__button">
                 Подробнее
                 <div class="icon">
@@ -321,7 +324,7 @@
         </p>
       </div>
       <div class="cards__container__feedback">
-        <div class="card__feadback card__feadback__tab">
+        <div class="card__feadback">
           <div class="card__text">
             <p>
               Идейные соображения высшего порядка, а также рамки и место
@@ -343,7 +346,7 @@
           </div>
         </div>
 
-        <div class="card__feadback card__feadback__tab">
+        <div class="card__feadback">
           <div class="card__text">
             <p>
               Равным образом постоянный количественный рост и сфера нашей
@@ -380,175 +383,92 @@
           а также рамки и место обучения кадров
         </p>
       </div>
-      <div class="pic-desktop">
-        <div class="cards__travel__photos">
-          <img
-            class="card__travel__photo"
-            alt="Самолет"
-            src="/img/travel-photo-1.png"
-          />
-          <img
-            class="card__travel__photo"
-            alt="Вид из палатки"
-            src="/img/travel-photo-2.png"
-          />
-          <img
-            class="card__travel__photo"
-            alt="Скалы и закат"
-            src="/img/travel-photo-3.png"
-          />
-          <img
-            class="card__travel__photo"
-            alt="Пейзаж дорога"
-            src="/img/travel-photo-4.png"
-          />
-          <img
-            class="card__travel__photo small-pic"
-            alt="Белые скалы дувра - красивые места"
-            src="/img/travel-photo-5.png"
-          />
-          <img
-            class="card__travel__photo small-pic"
-            alt="Эстетика путешествий в машине"
-            src="/img/travel-photo-6.png"
-          />
-          <img
-            class="card__travel__photo small-pic"
-            alt="Висячий мост в парке"
-            src="/img/travel-photo-7.png"
-          />
-          <img
-            class="card__travel__photo small-pic"
-            alt="Палатки для кемпинга"
-            src="/img/travel-photo-8.png"
-          />
-          <img
-            class="card__travel__photo small-pic"
-            alt="Европейская улочка"
-            src="/img/travel-photo-9.png"
-          />
-          <img
-            class="card__travel__photo"
-            alt="Тихое озеро"
-            src="/img/travel-photo-10.png"
-          />
-          <img
-            class="card__travel__photo"
-            alt="Дублин -
-          Город в Ирландии"
-            src="/img/travel-photo-11.png"
-          />
-          <img
-            class="card__travel__photo"
-            alt="Доска для серфинга фото с девушкой"
-            src="/img/travel-photo-12.png"
-          />
-          <img
-            class="card__travel__photo"
-            alt="Здания, дорога"
-            src="/img/travel-photo-13.png"
-          />
+
+      <div class="container__images">
+        <div class="container__row__images container__first__row__images">
+          <img src="/img/travel-photo-1.png" />
+          <img class="img-tablet img-mobile" src="/img/travel-photo-2.png" />
+          <img class="img-mobile" src="/img/travel-photo-3.png" />
+          <img src="/img/travel-photo-4.png" />
+        </div>
+        <div class="container__row__images container__second__row__images">
+          <img src="/img/travel-photo-5.png" />
+          <img class="img-mobile" src="/img/travel-photo-6.png" />
+          <img class="img-tablet img-mobile" src="/img/travel-photo-7.png" />
+          <img src="/img/travel-photo-8.png" />
+          <img src="/img/travel-photo-9.png" />
+        </div>
+        <div class="container__row__images container__third__row__images">
+          <img src="/img/travel-photo-10.png" />
+          <img class="img-mobile" src="/img/travel-photo-11.png" />
+          <img class="img-mobile img-tablet" src="/img/travel-photo-12.png" />
+          <img class="" src="/img/travel-photo-13.png" />
         </div>
       </div>
 
-      <div class="pic-tablet">
-        <div class="cards__travel__photos">
-          <img
-            class="card__travel__photo m_pic"
-            alt="Самолет"
-            src="/img/travel-photo-1.png"
-          />
-          <img
-            class="card__travel__photo m_pic"
-            alt="Скалы и закат"
-            src="/img/travel-photo-3.png"
-          />
-          <img
-            class="card__travel__photo m_pic"
-            alt="Пейзаж дорога"
-            src="/img/travel-photo-4.png"
-          />
+      <!-- 
 
+      <div class="image-grid">
+        <div class="image-row">
           <img
-            class="card__travel__photo small-pic"
-            alt="Белые скалы дувра - красивые места"
-            src="/img/image-tablet-5.png"
+          class="image image-01"
+          src="https://i.ibb.co/tKJRQw3/travel-photo-1.png"
           />
           <img
-            class="card__travel__photo small-pic"
-            alt="Эстетика путешествий в машине"
-            src="/img/image-tablet-8.png"
+          class="image image-02"
+          src="https://i.ibb.co/dfwkhdT/travel-photo-2.png"
           />
           <img
-            class="card__travel__photo small-pic"
-            alt="Палатки для кемпинга"
-            src="/img/image-tablet-6.png"
+          class="image image-03"
+          src="https://i.ibb.co/61JCjww/travel-photo-3.png"
           />
           <img
-            class="card__travel__photo small-pic"
-            alt="Здания, дорога"
-            src="/img/image-tablet-7.png"
-          />
-
-          <img
-            class="card__travel__photo m_pic"
-            alt="Тихое озеро"
-            src="/img/travel-photo-10.png"
-          />
-          <img
-            class="card__travel__photo m_pic"
-            alt="Дублин -
-          Город в Ирландии"
-            src="/img/travel-photo-11.png"
-          />
-          <img
-            class="card__travel__photo m_pic"
-            alt="Доска для серфинга фото с девушкой"
-            src="/img/travel-photo-12.png"
+          class="image image-04"
+          src="https://i.ibb.co/61PG98j/travel-photo-4.png"
           />
         </div>
-      </div>
-
-      <div class="pic-mobile">
-        <div class="cards__travel__photos">
+        <div class="image-row">
           <img
-            class="card__travel__photo"
-            alt="Самолет"
-            src="/img/travel-photo-1.png"
-          />
-
-          <img
-            class="card__travel__photo"
-            alt="Пейзаж дорога"
-            src="/img/travel-photo-4.png"
+          class="image image-05"
+          src="https://i.ibb.co/tXQTzKS/travel-photo-5.png"
           />
           <img
-            class="card__travel__photo small-pic"
-            alt="Белые скалы дувра - красивые места"
-            src="/img/travel-photo-5.png"
+          class="image image-06"
+          src="https://i.ibb.co/3sGXhHx/travel-photo-6.png"
           />
           <img
-            class="card__travel__photo small-pic"
-            alt="Палатки для кемпинга"
-            src="/img/travel-photo-8.png"
-          />
+            class="image image-07"
+            src="https://i.ibb.co/6rBMJny/travel-photo-7.png"
+            />
+            <img
+            class="image image-08"
+            src="https://i.ibb.co/TcBVncN/travel-photo-8.png"
+            />
+            <img
+            class="image image-09"
+            src="https://i.ibb.co/BrqPy4h/travel-photo-9.png"
+            />
+          </div>
+          <div class="image-row">
+            <img
+            class="image image-10"
+            src="https://i.ibb.co/5nF2WQk/travel-photo-10.png"
+            />
           <img
-            class="card__travel__photo small-pic"
-            alt="Здания, дорога"
-            src="/img/travel-photo-13.png"
-          />
-          <img
-            class="card__travel__photo big-pic"
-            alt="Европейская улочка"
-            src="/img/travel-photo-9.png"
-          />
-          <img
-            class="card__travel__photo big-pic"
-            alt="Тихое озеро"
-            src="/img/travel-photo-10.png"
-          />
+            class="image image-11"
+            src="https://i.ibb.co/Qm5MWYX/travel-photo-11.png"
+            />
+            <img
+            class="image image-12"
+            src="https://i.ibb.co/HVhHt6q/travel-photo-12.png"
+            />
+            <img
+            class="image image-13"
+            src="https://i.ibb.co/KzXmv8f/travel-photo-13.png"
+            />
+          </div>
         </div>
-      </div>
+      -->
     </section>
 
     <!-- Travel stories -->
@@ -724,25 +644,26 @@
 
     <!-- Footer -->
     <footer>
-      
-      <div id="footer__info"><a href="#">Наши социальные сети</a></div>
-      <div id="footer__links">
-        <ul>
-          <li>
-            <img alt="Instagram-icon" src="/img/instagram.png" /><a>
-              instagram</a
-            >
-          </li>
-        </ul>
-        <ul>
-          <li>
-            <img alt="Facebook-icon" src="/img/facebook.png" />
-            <a>facebook</a>
-          </li>
-        </ul>
-        <ul>
-          <li><img alt="Vk-icon" src="/img/vk.png" /><a> vkontakte</a></li>
-        </ul>
+      <div class="container">
+        <div id="footer__info"><a href="#">Наши социальные сети</a></div>
+        <div id="footer__links">
+          <ul>
+            <li>
+              <img alt="Instagram-icon" src="/img/instagram.png" /><a>
+                instagram</a
+              >
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <img alt="Facebook-icon" src="/img/facebook.png" />
+              <a>facebook</a>
+            </li>
+          </ul>
+          <ul>
+            <li><img alt="Vk-icon" src="/img/vk.png" /><a> vkontakte</a></li>
+          </ul>
+        </div>
       </div>
     </footer>
   </body>

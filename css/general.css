@@ -13,6 +13,7 @@ BOLD: 700
 
 ** BACKGROUND
 * #e5e5e5
+* #F9F7F4;
 
 ** TINTS
 * #FFFFFF
@@ -38,7 +39,6 @@ DESKTOP: 50
 MOBILE: 20
 */
 
-
 * {
   margin: 0;
   padding: 0;
@@ -48,10 +48,19 @@ MOBILE: 20
 html {
   box-sizing: border-box;
   overflow-x: hidden;
+  /* font-size: 10px; */
+  /* 10px / 16px = 0.625 * 100 = 62.5% */
+  font-size: 62.5%;
 }
 
 body {
   font-family: "Roboto", sans-serif;
   background-color: #e5e5e5;
   overflow-x: hidden;
+}
+
+@media (min-width: 1024px) and (max-width: 1200px) {
+  body {
+    background-color: #f9f7f4;
+  }
 }

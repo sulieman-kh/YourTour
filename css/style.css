@@ -1,6 +1,7 @@
 .header {
+  height: 70rem;
   color: #ffffff;
-  background: url("/img/img-header.png");
+  background: url("/img/img-header.png") no-repeat;
   background-size: cover;
   background-position: 30% 100%;
 }
@@ -8,9 +9,8 @@
 .nav {
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  height: 5.5rem;
-  position: relative;
+  justify-content: space-evenly;
+  height: 8.8rem;
 }
 
 /* STICKY NAVIGATION */
@@ -33,16 +33,12 @@
 .sticky #do-your-tour,
 .sticky #feedback,
 .sticky #travel-stories {
-  padding-top: 80px;
-}
-
-.hero {
-  padding-bottom: 5.4rem;
+  padding-top: 12.5rem;
 }
 
 nav a {
   color: #ffffff;
-  font-size: 42px;
+  font-size: 4rem;
   font-weight: 700;
   text-decoration: none;
 }
@@ -57,32 +53,20 @@ nav a {
 
 ul {
   list-style: none;
-  padding-left: 25px;
-  padding-right: 25px;
   display: flex;
-  gap: 30px;
+  gap: 3rem;
 }
 
 .list-header {
   display: inline-block;
   cursor: pointer;
-  text-indent: 0.3em;
-  /* margin-left: 50px; */
-  /* color: #ffffff; */
 }
-
-
 
 ul li a {
   color: #ffffff;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 2rem;
   font-weight: 400;
-}
-
-nav.mobile-nav {
-  /* padding-left: 50px; */
-  padding-right: 54px;
 }
 
 .link {
@@ -90,7 +74,7 @@ nav.mobile-nav {
 }
 
 .num-mobile {
-  font-size: 20px;
+  font-size: 2rem;
 }
 
 .cta__hero {
@@ -101,16 +85,15 @@ nav.mobile-nav {
 }
 
 .title {
-  margin-left: 400px;
-  margin-right: 400px;
-  font-size: 5vw;
+  margin-left: 40rem;
+  margin-right: 40rem;
+  font-size: 7rem;
 }
 .desc {
-  max-width: 600px;
-  padding-top: 50px;
-  padding-bottom: 50px;
-
-  font-size: 20px;
+  max-width: 60rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  font-size: 2rem;
   line-height: 1.5;
   display: flex;
   flex-direction: row;
@@ -119,32 +102,40 @@ nav.mobile-nav {
 }
 
 header button[type="submit"] {
-  padding: 5px 20px;
-  font-size: 20px;
+  padding: 0.5rem 2rem;
+  font-size: 2rem;
   border-radius: 10px;
   border-style: none;
   cursor: pointer;
+  color: #1b1f2b;
 }
 
 .title__section {
-  padding-bottom: 100px;
+  padding-bottom: 10rem;
 }
 
+/* Choose your tour */
 #choose-your-tour {
-  padding: 135px 60px 0;
+  padding: 13.5rem 6rem 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
 }
 
+.top__box {
+  display: grid;
+  gap: 1rem;
+}
+
 h2 {
-  font-size: 55px;
+  font-size: 6rem;
   text-align: center;
+  color: #1b1f2b;
 }
 
 #choose-your-tour ul {
-  margin-top: 25px;
+  margin-top: 2.5rem;
   justify-content: center;
 }
 
@@ -160,15 +151,15 @@ h2 {
 }
 
 #choose-your-tour ul li {
-  margin-left: 25px;
+  margin-left: 2.5rem;
 }
 
 #choose-your-tour ul li a {
   color: #1b1f2b;
   font-weight: 700;
-  font-size: 20px;
+  font-size: 2rem;
   cursor: pointer;
-  margin-left: 2px;
+  margin-left: 0.2rem;
 }
 
 .cards__container {
@@ -176,9 +167,12 @@ h2 {
   justify-content: center;
   align-items: center;
   flex-flow: wrap;
-  gap: 30px;
-  padding-left: 2rem;
-  padding-right: 2rem;
+  gap: 3rem;
+  padding-left: 3.2rem;
+  padding-right: 3.2rem;
+}
+.card__text {
+  font-size: 1.7rem;
 }
 
 .box__text {
@@ -187,18 +181,19 @@ h2 {
   height: 100%;
   justify-content: space-between;
   text-align: start;
-  padding: 50px;
+  padding: 5rem;
   z-index: 1;
 }
 
-.footer__card {
+.footer__box {
   display: flex;
   align-items: center;
+  font-size: 2.3rem;
 }
 
 .card {
-  width: 370px;
-  height: 520px;
+  width: 37rem;
+  height: 52rem;
   position: relative;
   background-color: #1b1f2b;
   display: flex;
@@ -250,14 +245,6 @@ h2 {
     rgba(27, 27, 27, 1) 86%
   );
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0a0a0a', endColorstr='#1b1b1b',GradientType=0 );
-
-  -moz-box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.3);
-  -webkit-box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.3);
-  box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.3);
-}
-
-.card__text {
-  margin-top: 16px;
 }
 
 .card__img {
@@ -276,7 +263,7 @@ h2 {
 .card__button {
   font-weight: 700;
   display: flex;
-  padding: 7px 15px;
+  padding: 0.7rem 1.5rem;
   border-radius: 50px;
 }
 
@@ -286,16 +273,16 @@ h2 {
 .icon {
   align-items: center;
   transform: translate(-20%, -20%);
-  width: 40px;
+  width: 4rem;
   display: flex;
-  margin-top: 6px;
+  margin-top: 0.6rem;
 }
 
 .arrow {
   position: absolute;
-  left: 25px;
+  left: 2.5rem;
   width: 50%;
-  height: 2px;
+  height: 0.2rem;
   background-color: #ffffff;
   animation: arrow 50ms linear infinite;
 }
@@ -305,13 +292,13 @@ h2 {
   content: "";
   position: absolute;
   width: 10%;
-  height: 8px;
-  right: 2px;
+  height: 0.8rem;
+  right: 0.2rem;
   background-color: #ffffff;
 }
 
 .arrow::after {
-  top: -6px;
+  top: -0.6rem;
   transform: rotate(-45deg);
 }
 
@@ -321,14 +308,15 @@ h2 {
 
 /* Do your tour */
 #do-your-tour {
-  padding: 135px 60px 0;
+  padding: 13.5rem 6rem 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  font-size: 2rem;
 }
 
 p {
-  font-size: 20px;
+  font-size: 2rem;
   line-height: 1.5;
   text-align: center;
   color: #a6a6a6;
@@ -340,9 +328,9 @@ p {
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin: 0 auto;
-  padding: 4rem;
-  column-gap: 3.2rem;
-  row-gap: 2.4rem;
+  padding: 6.4rem;
+  column-gap: 5rem;
+  row-gap: 3.8rem;
 }
 
 .full-width {
@@ -350,12 +338,12 @@ p {
 }
 .label {
   font-weight: bold;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.8rem;
 }
 
 .radio-questions {
   font-weight: bold;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.8rem;
 }
 
 input,
@@ -381,16 +369,16 @@ input[type="tel"],
 input[type="date"],
 select,
 textarea {
-  font: 1.25rem / 1.5 sans-serif;
+  font-size: 2rem;
   display: block;
   box-sizing: border-box;
   width: 100%;
-  padding: 0.5rem 0.75rem;
-  margin-top: 8px;
+  padding: 0.8rem 1.2rem;
+  margin-top: 0.8rem;
 }
 
 select {
-  background: url("/img/Rectangle34.png") no-repeat center right 0.75rem;
+  background: url("/img/Rectangle34.png") no-repeat center right 1.2rem;
   background-color: #f4f0e9;
   color: #a6a6a6;
 }
@@ -401,7 +389,7 @@ textarea::placeholder {
 }
 
 textarea {
-  min-height: 8rem;
+  min-height: 12.8rem;
 }
 fieldset {
   border: 0;
@@ -409,18 +397,18 @@ fieldset {
 
 input[type="radio"],
 input[type="checkbox"] {
-  height: 1.5em;
-  width: 1.5em;
+  height: 2rem;
+  width: 2rem;
   vertical-align: middle;
   border: 2px solid #1b1f2b;
-  margin-right: 8px;
+  margin-right: 0.8rem;
   background-color: #ffffff;
 }
 
 input[type="radio"]:checked {
   background-image: radial-gradient(
     hsl(225, 23%, 14%) 40%,
-    transparent calc(40% + 1px)
+    transparent calc(40% + 0.1rem)
   );
 }
 
@@ -433,13 +421,17 @@ input[type="checkbox"]:checked {
   background-size: 85%;
   background-position: center;
 }
-
+.full-width.mobile__button {
+  display: flex;
+  gap: 3rem;
+}
 button[name="find-a-tour"],
 button[type="reset"] {
   border: 0rem;
   cursor: pointer;
-  padding: 15px 30px;
-  border-radius: 10px;
+  padding: 1.8rem 7rem;
+  border-radius: 1rem;
+  font-size: 2rem;
 }
 
 button[name="find-a-tour"] {
@@ -449,7 +441,6 @@ button[name="find-a-tour"] {
 button[type="reset"] {
   background-color: #e0f0e5;
   color: #286562;
-  margin-left: 20px;
 }
 .mobile__checkbox {
   display: flex;
@@ -458,7 +449,7 @@ button[type="reset"] {
 #feedback,
 #travel-stories {
   text-align: center;
-  padding: 135px 60px auto;
+  padding: 13.5rem 6rem auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -469,15 +460,15 @@ button[type="reset"] {
   justify-content: center;
   align-items: center;
   flex-flow: wrap;
-  gap: 30px;
-  padding-left: 8rem;
-  padding-right: 8rem;
+  gap: 3rem;
+  padding-left: 12.8rem;
+  padding-right: 12.8rem;
 }
 
 .card__feadback {
-  padding: 40px;
-  max-width: 570px;
-  height: 80vh;
+  padding: 4rem;
+  max-width: 57rem;
+  height: 67rem;
   position: relative;
   background-color: #f4f0e9;
   display: flex;
@@ -491,15 +482,16 @@ button[type="reset"] {
 .card__text p {
   font-weight: bold;
   flex: 1;
-  font-size: 22px;
+  font-size: 2.3rem;
   text-align: start;
-  line-height: 1.5;
+  line-height: 2.8rem;
   color: #1b1f2b;
 }
 
 .card__footer__feedback {
   display: flex;
   justify-content: space-between;
+  color: #1b1f2b;
 }
 
 .left,
@@ -513,32 +505,48 @@ button[type="reset"] {
 /* Travel Photos */
 #travel-photos {
   text-align: center;
-  padding: 135px 30px 0;
+  padding: 13.5rem 3rem 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.cards__travel__photos {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 30px;
-  column-gap: 27px;
+.container__images {
+  margin: 0;
+  display: grid;
+  row-gap: 3rem;
 }
 
-.card__travel__photo {
+.container__row__images {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  gap: 3rem;
+}
+.container__row__images img {
+  width: 100%;
+  display: block;
   border-radius: 50px;
 }
 
-.small-pic {
-  width: 350px;
-  height: 301px;
+/* img travel */
+.image-grid {
+  padding: 1.2rem;
 }
 
-.pic-mobile,
-.pic-tablet {
-  display: none;
+.image-row {
+  display: flex;
+}
+.image-row .image {
+  margin: 1.2rem;
+  height: 26rem;
+}
+
+.image {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  flex: 1;
+  border-radius: 50px;
 }
 
 .cards__container__travel__stories {
@@ -546,15 +554,15 @@ button[type="reset"] {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  gap: 50px;
+  gap: 5rem;
   padding-left: 8rem;
   padding-right: 8rem;
 }
 
 .card__travel__stories {
   display: flex;
-  width: 1170px;
-  height: 567px;
+  width: 117rem;
+  height: 56.7rem;
   align-items: center;
   justify-content: center;
   overflow: hidden;
@@ -580,28 +588,27 @@ button[type="reset"] {
   flex-direction: column;
   width: 100%;
   left: 0;
-  padding: 60px;
+  padding: 6rem;
   background-color: rgb(90 65 63 / 22%);
 }
 
 .card__title {
-  font-size: 35px;
   text-align: start;
 }
 
 .card__desc {
   text-align: start;
-  padding-top: 35px;
-  width: 554px;
-  font-size: 20px;
+  padding-top: 3.5rem;
+  width: 55rem;
+  font-size: 2rem;
   line-height: 1.5;
-  height: 390px;
+  height: 39rem;
 }
 
 .list__desc__card__travel__storeis {
-  margin-top: 25px;
+  margin-top: 2.5rem;
   display: block;
-  margin-left: 15px;
+  margin-left: 1.5rem;
 }
 
 .footer__cards__travel__stories {
@@ -613,13 +620,13 @@ button[type="reset"] {
   display: flex;
   flex: 1;
   align-items: center;
-  font-size: 20px;
+  font-size: 2rem;
 }
 
 .right__footer__card__stories {
   display: flex;
   /* flex: 1; */
-  font-size: 20px;
+  font-size: 2rem;
   justify-content: flex-end;
 }
 
@@ -635,30 +642,34 @@ button[type="reset"] {
 
 /* Contect-us */
 #contect-us {
-  padding: 135px 60px 0;
+  padding: 13.5rem 6rem 0;
 }
 
 .box {
-  max-width: 52rem;
+  max-width: 83.2rem;
   margin: 0 auto;
-  padding: 0 1.2rem;
+  padding: 0 2rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
 }
 
 .img-contect-us {
-  width: 370px;
+  width: 37rem;
   border-radius: 50px;
 }
 
 h3 {
-  font-size: 35px;
+  font-size: 3.5rem;
+}
+
+#contact-us h3 {
+  color: #1b1f2b;
 }
 
 .desc__card__contect__us p {
   text-align: start;
-  margin-top: 10px;
+  margin-top: 1rem;
 }
 
 .desc__card__contect__us p span:hover {
@@ -669,23 +680,26 @@ h3 {
 #feedback .desc__section,
 #travel-photos .desc__section,
 #travel-stories .desc__section {
-  margin-top: 30px;
+  margin-top: 3rem;
 }
 
 /* Footer */
 footer {
-  margin-top: 135px;
+  margin-top: 13.5rem;
   background-color: #f4f0e9;
-  height: 88px;
-  display: flex;
+  height: 8.8rem;
+  /* display: flex; */
 }
-
+footer .container {
+  display: flex;
+  height: 100%;
+}
 
 #footer__info {
   display: flex;
   color: #a6a6a6;
   flex: 1;
-  font-size: 20px;
+  font-size: 2rem;
   justify-content: center;
   align-items: center;
 }
@@ -693,17 +707,17 @@ footer {
 #footer__info a {
   text-decoration: none;
   color: #a6a6a6;
- cursor: pointer;
+  cursor: pointer;
 }
 
 #footer__links {
   display: flex;
   flex: 1;
-  gap: 30px;
-  font-size: 20px;
-  /* justify-content: center; */
+  gap: 3.8rem;
+  font-size: 2rem;
+  justify-content: center;
   align-items: center;
-  
+  padding-right: 7rem;
 }
 #footer__links ul li a {
   color: #1b1f2b;
