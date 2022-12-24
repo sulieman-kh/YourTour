@@ -188,6 +188,25 @@
 
 /* LAPTOP */
 @media screen and (min-width: 769px) and (max-width: 1023px) {
+  #travel-photos {
+    padding: 15.3rem 2rem 0;
+  }
+
+  .container__row__images {
+    gap: 2rem;
+  }
+
+  .container__row__images .img-tablet {
+    display: none;
+  }
+
+  .container__second__row__images {
+    grid-template-columns: 1fr 1fr;
+  }
+  .container__first__row__images img,
+  .container__third__row__images img {
+    height: 30rem;
+  }
 }
 
 /* TABLET */
@@ -205,11 +224,11 @@
   .nav {
     justify-content: space-around;
   }
-  nav.mobile-nav {
+  nav.menu-nav {
     display: none;
   }
   .title {
-    font-size: 3rem;
+    font-size: 5rem;
   }
 
   /* Choose your tour */
@@ -251,6 +270,12 @@
     height: 60rem;
   }
   /* Travel Photos */
+  .container__row__images img {
+    border-radius: 25px;
+  }
+  .container__second__row__images {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
   .container__row__images .img-mobile,
   .container__second__row__images .img-tablet,
   .container__row__images .img-mobile,
