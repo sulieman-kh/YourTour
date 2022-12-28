@@ -25,7 +25,8 @@
   padding-bottom: 0;
   background-color: #f3efe8;
   z-index: 9999;
-  box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.3);
+  box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.2);
+  opacity: 0.9;
 }
 
 .sticky .hero,
@@ -116,11 +117,12 @@ header button[type="submit"] {
 
 /* Choose your tour */
 #choose-your-tour {
-  padding: 13.5rem 6rem 0;
+  padding: 13.5rem 0 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
+  align-items: center;
 }
 
 .top__box {
@@ -163,13 +165,10 @@ h2 {
 }
 
 .cards__container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: wrap;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+
   gap: 3rem;
-  padding-left: 3.2rem;
-  padding-right: 3.2rem;
 }
 .card__text {
   font-size: 1.7rem;
@@ -308,7 +307,7 @@ h2 {
 
 /* Do your tour */
 #do-your-tour {
-  padding: 13.5rem 6rem 0;
+  padding: 13.5rem 0 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -337,12 +336,12 @@ p {
   grid-column: span 2;
 }
 .label {
-  font-weight: bold;
-  margin-bottom: 0.8rem;
+  /* font-weight: bold;
+  margin-bottom: 0.8rem; */
 }
 
 .radio-questions {
-  font-weight: bold;
+  /* font-weight: bold; */
   margin-bottom: 0.8rem;
 }
 
@@ -354,9 +353,9 @@ textarea {
   -moz-appearance: none;
 
   background-color: transparent;
-  border: 1px solid #f4f0e9;
+  border: 1px solid #f9f7f4;
   border-radius: 10px;
-  background: #f4f0e9;
+  background: #f9f7f4;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -442,8 +441,14 @@ button[type="reset"] {
   background-color: #e0f0e5;
   color: #286562;
 }
-.mobile__checkbox {
+.form__checkbox {
   display: flex;
+  align-items: center;
+  font-size: 1.7rem;
+}
+
+.form__checkbox p {
+  font-size: 1.7rem;
 }
 
 #feedback,
@@ -461,14 +466,14 @@ button[type="reset"] {
   align-items: center;
   flex-flow: wrap;
   gap: 3rem;
-  padding-left: 12.8rem;
-  padding-right: 12.8rem;
+  /* padding-left: 12.8rem;
+  padding-right: 12.8rem; */
 }
 
 .card__feadback {
   padding: 4rem;
   max-width: 57rem;
-  height: 67rem;
+  height: 70rem;
   position: relative;
   background-color: #f4f0e9;
   display: flex;
@@ -717,7 +722,7 @@ footer .container {
   font-size: 2rem;
   justify-content: center;
   align-items: center;
-  padding-right: 7rem;
+  padding-right: 10rem;
 }
 #footer__links ul li a {
   color: #1b1f2b;
