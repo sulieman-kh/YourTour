@@ -88,7 +88,7 @@ ul li a {
 .title {
   margin-left: 40rem;
   margin-right: 40rem;
-  font-size: 7rem;
+  font-size: 9.6rem;
 }
 .desc {
   max-width: 60rem;
@@ -378,7 +378,7 @@ textarea {
 
 select {
   background: url("/img/Rectangle34.png") no-repeat center right 1.2rem;
-  background-color: #f4f0e9;
+  background-color: #f9f7f4;
   color: #a6a6a6;
 }
 
@@ -400,7 +400,7 @@ input[type="checkbox"] {
   width: 2rem;
   vertical-align: middle;
   border: 2px solid #1b1f2b;
-  margin-right: 0.8rem;
+  margin-right: 0.9rem;
   background-color: #ffffff;
 }
 
