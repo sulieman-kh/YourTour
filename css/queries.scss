@@ -1,4 +1,4 @@
-@media (min-width: 767px) {
+@media (min-width: 1025px) {
   button[type="submit"]:hover {
     background-color: #efa501;
     color: #ffffff;
@@ -8,15 +8,21 @@
     background: #f8e6be;
     color: #1b1f2b;
   }
-  .card {
-    transform: scale(1);
-    transition: all 0.3s;
-  }
-  .card:hover {
-    cursor: pointer;
+  .carda {
     transform: scale(1.2);
-    transition: all 0.3s;
-    z-index: 1;
+    transition: all 0.5s;
+  }
+  .btna {
+    background-color: #efa501;
+  }
+
+  // .card:first-of-type {
+  //   color: #286562;
+  // }
+
+  .card:hover .card__img {
+    transform: scale(1.2);
+    transition: all 0.5s;
   }
 
   .card:hover .card__button,
@@ -51,6 +57,19 @@
     text-decoration: underline;
     text-underline-position: under;
   }
+  form span,
+  #contect-us span {
+    cursor: pointer;
+    color: #1b1f2b;
+  }
+  form span:hover,
+  #contect-us span:hover {
+    text-decoration: underline;
+  }
+  form span:active,
+  #contect-us span:active {
+    color: #286562;
+  }
 
   .right__footer__card__stories ul :active,
   .right__footer__card__stories ul :focus {
@@ -61,18 +80,18 @@
 
 /* TV - EXTRA LARGE*/
 @media (min-width: 1281px) {
-  .header {
-    height: 83rem;
+  .image__header-s {
+    display: none;
   }
-  .nav {
+  .header {
+    height: 8.3rem;
+  }
+  header {
     justify-content: center;
     gap: 17rem;
   }
-  nav.menu-nav {
-    /* padding-left: 15.4rem;
-    padding-right: 15.4rem; */
-  }
-  nav ul {
+
+  header ul {
     gap: 5rem;
   }
 
@@ -93,6 +112,7 @@
   .right__footer__card__stories {
     flex: 1;
   }
+
   /* Travel Photos */
   .container__images {
     row-gap: 5rem;
@@ -104,6 +124,11 @@
     column-gap: 50px;
     gap: 50px;
   }
+  .box {
+    max-width: 77rem;
+    padding: 0;
+    gap: 3rem;
+  }
   /* Footer */
   footer .container {
     padding-right: 13rem;
@@ -113,6 +138,12 @@
 
 /* Laptops, Desktops */
 @media screen and (min-width: 1025px) and (max-width: 1280px) {
+  .image__header-s {
+    display: none;
+  }
+  .image__header {
+    background-size: cover;
+  }
   #travel-stories,
   #feedback,
   #choose-your-tour,
@@ -120,14 +151,14 @@
     padding: 13.5rem 5.3rem 0;
   }
 
-  .nav {
+  header {
     justify-content: center;
   }
 
   .title {
     padding-top: 4rem;
   }
-  nav.menu-nav {
+  header.menu-nav {
     padding-left: 4rem;
     padding-right: 4rem;
   }
@@ -139,6 +170,7 @@
   .cards__container {
     padding-left: 0;
     padding-right: 0;
+    grid-template-columns: 1fr 1fr;
     gap: 1.8rem;
   }
   .card {
@@ -190,6 +222,11 @@
   .right__footer__card__stories {
     flex: auto;
   }
+  .box {
+    max-width: 77rem;
+    padding: 0;
+    gap: 3rem;
+  }
   /* Footer */
   #footer__links {
     gap: 2rem;
@@ -198,11 +235,18 @@
 
 /*  TABLET  */
 @media screen and (min-width: 768px) and (max-width: 1024px) {
+  .image__header {
+    background: url("/img/img-header-mobile.jpg") no-repeat center;
+    background-size: cover;
+  }
+  .image__header-s {
+    display: none;
+  }
   .header {
-    height: 83rem;
+    height: 8.3rem;
   }
   .title {
-    padding-top: 11.5rem;
+    // padding-top: 11.5rem;
   }
   .desc {
     padding: 7rem;
@@ -260,6 +304,10 @@
   #contect-us .img-contect-us {
     width: 28rem;
   }
+  .box {
+    max-width: 71rem;
+    padding: 0;
+  }
   /* Footer */
   footer .container {
     // flex-direction: column;
@@ -273,29 +321,44 @@
 
 /* Tablets, Mobiles (Landscape) */
 @media (min-width: 481px) and (max-width: 767px) {
+  .first__section {
+    height: 68rem;
+  }
+  .image__header {
+    background: url("/img/img-header-mobile.jpg") no-repeat center;
+    background-size: cover;
+  }
   #travel-stories,
   #feedback,
   #choose-your-tour,
   #do-your-tour {
     padding: 10rem 3rem 0;
   }
+  .menu-nav {
+    display: none;
+  }
   .header {
-    height: 55rem;
+    // height: 55rem;
     background-position: center;
   }
-  .nav {
+  header {
     justify-content: space-around;
   }
-  nav.menu-nav {
+  header.menu-nav {
     display: none;
   }
   .title {
     font-size: 5rem;
   }
-
+  .desc {
+    padding: 6rem;
+  }
   /* Choose your tour */
   #choose-your-tour ul {
     flex-wrap: wrap;
+  }
+  .cards__container {
+    grid-template-columns: auto;
   }
   /* Do your tour */
   .form {
@@ -316,20 +379,54 @@
     border-radius: 10px;
     font-size: 1.6rem;
   }
+  input[type="radio"] {
+    width: 2rem;
+    height: 2rem;
+  }
   .full-width.mobile__button {
     display: flex;
     justify-content: space-between;
   }
+  .form__checkbox {
+    align-items: start;
+  }
+  .form__checkbox p {
+    text-align: start;
+  }
+  input[type="checkbox"] {
+    width: 3.3rem;
+  }
   /* Feedback */
+  #feedback {
+    align-items: center;
+  }
+  h2 {
+    font-size: 4rem;
+  }
   .cards__container__feedback {
     padding-left: 0;
     padding-right: 0;
   }
+  .card__content {
+    padding: 3rem;
+    top: 0;
+  }
+
   .card__text p {
     font-size: 1.8rem;
   }
   .card__feadback {
-    height: 60rem;
+    // height: 60rem;
+  }
+  .card__desc {
+    padding-right: 2rem;
+    padding-top: 2rem;
+    width: 30rem;
+    font-size: 1.8rem;
+    height: 43rem;
+  }
+  .right__footer__card__stories ul {
+    display: none;
   }
   /* Travel Photos */
   .container__row__images img {
@@ -354,6 +451,7 @@
     grid-template-columns: 1fr;
     gap: 2.8rem;
     margin-bottom: 7.5rem;
+    padding: 0 6rem;
   }
 
   .box_img__card__contect__us {
@@ -381,11 +479,10 @@
 
 /* MOBILE */
 @media (min-width: 320px) and (max-width: 480px) {
-  .header {
-    height: 51rem;
-    background-position: center;
+  .image__header {
+    background: url("/img/img-header-mobile.jpg") no-repeat;
+    background-size: cover;
   }
-
   #choose-your-tour,
   #do-your-tour,
   #feedback,
@@ -412,7 +509,9 @@
   .sticky #travel-stories {
     padding-top: 7.5rem;
   }
-
+  .sticky header {
+    height: 9.5rem;
+  }
   h1,
   h2 {
     font-size: 3.4rem;
@@ -424,11 +523,15 @@
   p {
     font-size: 1.6rem;
   }
+  .first__section {
+    height: 48.8rem;
+    position: relative;
+  }
 
   .menu-nav {
     display: none;
   }
-  .nav {
+  header {
     justify-content: space-between;
     padding: 2rem;
   }
@@ -438,8 +541,9 @@
   }
 
   .title {
-    padding-top: 5rem;
+    // padding-top: 5rem;
     font-size: 3.4rem;
+    margin-top: 5rem;
   }
 
   .desc {
@@ -448,7 +552,7 @@
     font-size: 1.6rem;
   }
 
-  .header button[type="submit"] {
+  .hero button[type="submit"] {
     padding: 0.5rem 2rem;
     font-size: 1.6rem;
   }
@@ -517,6 +621,14 @@
     display: flex;
     justify-content: space-between;
   }
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  input[type="date"],
+  select,
+  textarea {
+    font-size: 1.6rem;
+  }
   input[type="checkbox"] {
     padding: 8px;
   }
@@ -529,12 +641,23 @@
     padding: 15px 30px;
     font-size: 16px;
   }
+  input[type="radio"],
+  input[type="checkbox"] {
+    width: 2rem;
+    height: 2rem;
+  }
+  input[type="checkbox"]:checked {
+    background-size: 60%;
+  }
   .form__checkbox {
     align-items: start;
   }
   .form__checkbox p {
     font-size: 1.6rem;
     text-align: start;
+  }
+  .box {
+    padding: 0 2rem;
   }
   /* Feedback */
   .cards__container__feedback {
@@ -663,7 +786,7 @@
   /* Footer */
   footer {
     height: 9.5rem;
-    margin-top: 7.5rem;
+    margin-top: 2.5rem;
     padding-top: 0;
     display: grid;
   }
